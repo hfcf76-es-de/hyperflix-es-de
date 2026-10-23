@@ -1,0 +1,298 @@
+<theme>
+
+    <variables>
+        <rootpath>./</rootpath>
+            <fallbackLogo>${rootpath}/_inc/images/_logo.png</fallbackLogo>
+        </variables>
+
+    <include>./navigationsounds.xml</include>
+
+    <include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+    <include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+
+    <include>./colors.xml</include>
+
+    <view name="system, gamelist">
+            <helpsystem name="help">
+                <pos>0.5 0.017</pos>
+                <origin>0.5 0.5</origin>
+                <textColor>ABABAB</textColor>
+                <iconColor>ABABAB</iconColor>
+                <fontSize>0.026</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <iconTextSpacing>0.003</iconTextSpacing>
+                <originDimmed>0.5 0</originDimmed>
+                <posDimmed>0.5 0.96</posDimmed>
+            </helpsystem>
+     </view>
+
+     <view name="system">
+
+           <gameselector name="video-selector">
+                <selection>random</selection>
+            </gameselector>
+
+            <image name="characters">
+                <pos>-0.1 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/characters/${system.theme}.webp</path>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>30</zIndex>
+            </image>
+
+             <image name="consoles">
+                <pos>0.6 0.96</pos>
+                <origin>0 1</origin>
+                <maxSize>0.2 0.25</maxSize>
+                <path>${rootpath}/_inc/systems/consoles/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/consoles/custom-collections.webp</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>35</zIndex>
+            </image>
+
+            <image name="pointer">
+                <pos>0.97 .5</pos>
+                <origin>.5 .5</origin>
+                <maxSize>.2 .2</maxSize>
+                <path>${rootpath}/_inc/systems/pointers/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/pointers/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>45</zIndex>
+               </image>
+
+            <image name="overlay">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/images/overlay.png</path>
+                <interpolation>linear</interpolation>
+                <zIndex>50</zIndex>
+           </image>
+
+            <text name="game-count-shadow">
+                <pos>0.011 0.911</pos>
+                <size>1 0</size>
+                <systemdata>gamecountGames</systemdata>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>000000</color>
+                <zIndex>55</zIndex>
+             </text>
+
+            <text name="game-count">
+                <pos>0.01 0.91</pos>
+                <size>1 0</size>
+                <systemdata>gamecountGames</systemdata>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>FFCC00</color>
+                <zIndex>60</zIndex>
+            </text>
+
+          <text name="system-description-shadow">
+            <origin>0 0.5</origin>
+            <pos>0.011 0.981</pos>
+            <size>0.98 0.05</size>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>000000</color>
+            <zIndex>65</zIndex>
+          </text>
+
+        <text name="system-description">
+            <origin>0 0.5</origin>
+            <pos>0.01 0.98</pos>
+            <size>0.98 0.05</size>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>C0C0C0</color>
+            <zIndex>70</zIndex>
+           </text>
+
+     </view>
+
+     <view name="gamelist">
+           
+           <image name="game-box">
+                <pos>0.54 0.81</pos>
+                <maxSize>0.18 0.34</maxSize>
+                <origin>0 1</origin>
+                <imageType>3dbox,cover</imageType>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>35</zIndex>
+            </image>  
+
+            <image name="game-media">
+                <pos>0.64 0.83</pos>
+                <maxSize>0.1 0.2</maxSize>
+                <origin>0 1</origin>
+                <imageType>physicalmedia</imageType>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>40</zIndex>
+            </image>  
+
+            <image name="pointer">
+                <pos>0.97 .5</pos>
+                <origin>.5 .5</origin>
+                <maxSize>.2 .2</maxSize>
+                <path>${rootpath}/_inc/systems/pointers/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/pointers/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>50</zIndex>
+            </image> 
+
+            <image name="overlay">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/images/overlay.png</path>
+                <interpolation>linear</interpolation>
+                <zIndex>55</zIndex>
+            </image>
+
+            <text name="game-name-shadow">
+                <metadata>name</metadata>
+                <pos>0.011 0.901</pos>
+                <size>1 0</size>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>000000</color>
+                <zIndex>60</zIndex>
+            </text>
+
+             <text name="game-name">
+                <metadata>name</metadata>
+                <pos>0.01 0.9</pos>
+                <size>1 0</size>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>FFCC00</color>
+                <zIndex>65</zIndex>
+            </text>
+
+            <gamelistinfo name="gamelist-info-shadow">
+                <pos>0.861 0.921</pos>
+                <size>w 0.02</size>
+                <fontSize>0.028</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>right</horizontalAlignment>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>000000</color>
+                <zIndex>70</zIndex>
+            </gamelistinfo>
+
+            <gamelistinfo name="gamelist-info">
+                <pos>0.86 0.92</pos>
+                <size>w 0.02</size>
+                <fontSize>0.028</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>right</horizontalAlignment>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>C0C0C0</color>
+                <zIndex>75</zIndex>
+            </gamelistinfo>
+
+           <text name="game-description-shadow">
+            <origin>0 0.5</origin>
+            <pos>0.011 0.981</pos>
+            <size>0.98 0.05</size>
+            <metadata>description</metadata>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>000000</color>
+            <zIndex>80</zIndex>
+            </text>
+          
+            <text name="game-description">
+            <origin>0 0.5</origin>
+            <pos>0.01 0.98</pos>
+            <size>0.98 0.05</size>
+            <metadata>description</metadata>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>C0C0C0</color>
+            <zIndex>85</zIndex>
+            </text>
+
+            <badges name="badges">
+                <pos>.81 .93</pos>
+                <origin>0 0.5</origin>
+                <size>.25 .03</size>
+                <horizontalAlignment>left</horizontalAlignment>
+                <direction>row</direction>
+                <lines>1</lines>
+                <itemsPerLine>9</itemsPerLine>
+                <itemMargin>-1 .01</itemMargin>
+                <slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
+                <customBadgeIcon badge="collection">${rootpath}/_inc/images/badge-collection.svg</customBadgeIcon>
+                <customBadgeIcon badge="folder">${rootpath}/_inc/images/badge-folder.svg</customBadgeIcon>
+                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/badge-favorite.svg</customBadgeIcon>
+                <customBadgeIcon badge="completed">${rootpath}/_inc/images/badge-completed.svg</customBadgeIcon>
+                <customBadgeIcon badge="kidgame">${rootpath}/_inc/images/badge-kidgame.svg</customBadgeIcon>
+                <customBadgeIcon badge="broken">${rootpath}/_inc/images/badge-broken.svg</customBadgeIcon>
+                <customBadgeIcon badge="controller">${rootpath}/_inc/images/badge-controller.svg</customBadgeIcon>
+                <customBadgeIcon badge="altemulator">${rootpath}/_inc/images/badge-altemulator.svg</customBadgeIcon>
+                <customBadgeIcon badge="manual">${rootpath}/_inc/images/badge-manual.svg</customBadgeIcon>
+                <controllerIconColor>FFCCOO</controllerIconColor>
+                <controllerSize>1</controllerSize>
+                <zIndex>90</zIndex>
+            </badges>
+
+     </view>
+
+
+    <variant name="unified-wheel">
+        <include>./unified-wheel.xml</include>
+    </variant>
+
+    <variant name="unified-vertical">
+        <include>./unified-vert.xml</include>
+    </variant>
+
+    <variant name="unified-vertical-wheel">
+        <include>./unified-vert-wheel.xml</include>
+    </variant>
+
+    <variant name="refried-wheel">
+        <include>./refried-wheel.xml</include>
+    </variant>
+
+    <variant name="refried-vertical">
+        <include>./refried-vert.xml</include>
+    </variant>
+
+    <variant name="refried-vertical-wheel">
+        <include>./refried-vert-wheel.xml</include>
+    </variant>
+
+</theme>
+

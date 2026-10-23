@@ -1,0 +1,150 @@
+<theme> 
+
+        <view name="system, gamelist">
+
+             <image name="background">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/_unified/backgrounds/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_unified/backgrounds/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>5</zIndex>
+             </image>
+
+         </view>
+
+        <view name="system">
+
+            <image name="video-background">
+                <pos>0.5 0.55</pos>
+                <origin>0.5 0.5</origin>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/_unified/video_bg/system_videobg.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>10</zIndex>
+             </image> 
+
+            <video name="system-video">
+                <pos>0.5 0.55</pos>
+                <size>0.4 0.545</size>
+                <origin>0.5 0.5</origin>
+                <imageType>screenshot</imageType>
+                <delay>0</delay>
+                <zIndex>15</zIndex>
+            </video>
+
+             <image name="videoborder">
+                <pos>0.5 0.55</pos>
+                <origin>0.5 0.5</origin>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/_unified/videoborders/system_videoborder.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>20</zIndex>
+             </image> 
+
+           <image name="system-logo">
+                <pos>0.5 0.14</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.55 0.2</maxSize>
+                <path>${rootpath}/_inc/systems/_unified/logos/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_unified/logos/${system.theme}.svg</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>25</zIndex>
+             </image> 
+
+            <carousel name="system-carousel">
+                <pos>1 0.5</pos>
+                <size>0.33 1</size>
+                <origin>1 0.5</origin>
+                <type>verticalWheel</type>
+                <staticImage>${logoSource}</staticImage>
+                <defaultImage>${fallbackLogo}</defaultImage>
+                <itemSize>0.150 0.125</itemSize>
+                <itemScale>1.5</itemScale>
+                <itemRotation>-13</itemRotation>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemRotationOrigin>3 0.5</itemRotationOrigin>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>
+                <unfocusedItemOpacity>0.7</unfocusedItemOpacity>
+                <unfocusedItemDimming>.7</unfocusedItemDimming>
+                <zIndex>40</zIndex>
+             </carousel>
+          
+        </view>
+
+        <view name="gamelist">
+
+            <image name="video-background">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/_unified/video_bg/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_unified/video_bg/game_videobg.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>10</zIndex>
+             </image> 
+
+            <video name="game-video">
+                <pos>0.280 0.567</pos>
+                <size>0.4 0.55</size>
+                <origin>0.5 0.5</origin>
+                <imageType>screenshot</imageType>
+                <delay>0</delay>
+                <zIndex>15</zIndex>
+            </video>     
+
+            <image name="video-border">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/_unified/videoborders/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_unified/videoborders/game_videoborder.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>20</zIndex>
+             </image> 
+
+            <image name="gamelist-logo">
+                <pos>0.28 0.15</pos>
+               <origin>0.5 0.5</origin>
+                <maxSize>0.45 0.2</maxSize>
+                <path>${rootpath}/_inc/systems/_unified/logos/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_unified/logos/${system.theme}.svg</default>
+                <interpolation>linear</interpolation>
+                <zIndex>25</zIndex>
+             </image>
+
+             <carousel name="game-carousel">
+                <pos>1 0.5</pos>
+                <size>0.33 1</size>
+                <origin>1 0.5</origin>
+                <type>verticalWheel</type>
+                <imageType>marquee</imageType>
+                <itemSize>0.150 0.125</itemSize>
+                <itemScale>1.5</itemScale>
+                <itemRotation>-13</itemRotation>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemRotationOrigin>3 0.5</itemRotationOrigin>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>
+                <unfocusedItemOpacity>0.7</unfocusedItemOpacity>
+                <unfocusedItemDimming>.7</unfocusedItemDimming>
+                <zIndex>40</zIndex>
+            </carousel>
+
+        </view>
+
+</theme>
+
+

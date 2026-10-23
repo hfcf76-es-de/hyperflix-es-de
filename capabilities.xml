@@ -1,0 +1,77 @@
+<themeCapabilities>
+
+    <themeName>Hyperflix</themeName>
+
+    <aspectRatio>16:9</aspectRatio>
+
+    <transitions name="fadeAndSlide">
+        <label>Default</label>
+        <selectable>false</selectable>
+        <systemToSystem>fade</systemToSystem>
+        <systemToGamelist>fade</systemToGamelist>
+        <gamelistToGamelist>slide</gamelistToGamelist>
+        <gamelistToSystem>instant</gamelistToSystem>
+        <startupToSystem>instant</startupToSystem>
+        <startupToGamelist>instant</startupToGamelist>
+    </transitions>
+
+    <suppressTransitionProfiles>
+        <entry>builtin-instant</entry>
+        <entry>builtin-slide</entry>
+        <entry>builtin-fade</entry>
+    </suppressTransitionProfiles>
+
+    <variant name="unified-wheel">
+        <label>Unified (Wheel)</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="unified-vertical">
+        <label>Unified (Vertical)</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="unified-vertical-wheel">
+        <label>Unified (Vertical Wheel)</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="refried-wheel">
+        <label>Refried (Wheel)</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="refried-vertical">
+        <label>Refried (Vertical)</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="refried-vertical-wheel">
+        <label>Refried (Vertical Wheel)</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+   <colorScheme name="silver-carousel">
+      <label>[Silver] Carousel Logos</label>
+   </colorScheme>
+
+   <colorScheme name="carbon-carousel">
+      <label>[Carbon] Carousel Logos</label>
+   </colorScheme>
+
+    <colorScheme name="rect-carousel">
+      <label>[Rect] Carousel Logos</label>
+    </colorScheme>
+
+    <colorScheme name="clear-carousel">
+      <label>[Clear] Carousel Logos</label>
+    </colorScheme>
+
+</themeCapabilities>
+
