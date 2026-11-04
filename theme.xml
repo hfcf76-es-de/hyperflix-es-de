@@ -1,0 +1,64 @@
+<theme>
+
+    <variables>
+        <rootpath>./</rootpath>
+            <fallbackLogo>${rootpath}/_inc/images/_logo.png</fallbackLogo>
+        </variables>
+
+    <include>${rootpath}/navigationsounds.xml</include>
+
+    <include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+    <include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+
+    <include>${rootpath}/colors.xml</include>
+
+     <view name="system">
+           <gameselector name="video-selector">
+                <selection>random</selection>
+           </gameselector>
+     </view>
+
+    <variant name="unified-wheel">
+        <include>${rootpath}/unified-wheel_19.5-9.xml</include>
+        <include>${rootpath}/unified-wheel_16-9.xml</include>
+        <include>${rootpath}/unified-wheel_16-10.xml</include>
+        <include>${rootpath}/unified-wheel_4-3.xml</include>
+    </variant>
+
+    <variant name="unified-vertical">
+        <include>${rootpath}/unified-vert_19.5-9.xml</include>
+        <include>${rootpath}/unified-vert_16-9.xml</include>
+        <include>${rootpath}/unified-vert_16-10.xml</include>
+        <include>${rootpath}/unified-vert_4-3.xml</include>
+    </variant>
+
+    <variant name="unified-vertical-wheel">
+        <include>${rootpath}/unified-vert-wheel_19.5-9.xml</include> 
+        <include>${rootpath}/unified-vert-wheel_16-9.xml</include>     
+        <include>${rootpath}/unified-vert-wheel_16-10.xml</include>
+        <include>${rootpath}/unified-vert-wheel_4-3.xml</include>
+    </variant>
+
+    <variant name="refried-wheel">
+        <include>${rootpath}/refried-wheel_19.5-9.xml</include>
+        <include>${rootpath}/refried-wheel_16-9.xml</include>
+        <include>${rootpath}/refried-wheel_16-10.xml</include>
+        <include>${rootpath}/refried-wheel_4-3.xml</include>
+    </variant>
+
+    <variant name="refried-vertical">
+        <include>${rootpath}/refried-vert_19.5-9.xml</include>
+        <include>${rootpath}/refried-vert_16-9.xml</include>
+        <include>${rootpath}/refried-vert_16-10.xml</include>
+        <include>${rootpath}/refried-vert_4-3.xml</include>
+    </variant>
+
+    <variant name="refried-vertical-wheel">
+        <include>${rootpath}/refried-vert-wheel_19.5-9.xml</include>
+        <include>${rootpath}/refried-vert-wheel_16-9.xml</include>
+        <include>${rootpath}/refried-vert-wheel_16-10.xml</include>
+        <include>${rootpath}/refried-vert-wheel_4-3.xml</include>
+    </variant>
+
+</theme>
+

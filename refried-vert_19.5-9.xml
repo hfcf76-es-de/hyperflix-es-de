@@ -1,0 +1,424 @@
+<theme> 
+
+        <aspectRatio name="19.5:9">
+
+        <view name="system">
+
+             <image name="background">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/_refried/backgrounds/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_refried/backgrounds/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>5</zIndex>
+             </image>
+
+            <image name="video-background">
+                <pos>0.5 0.55</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>1 1</maxSize>
+                <path>${rootpath}/_inc/systems/_refried/video_bg/system_videobg.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>10</zIndex>
+             </image> 
+
+            <video name="system-video">
+                <pos>0.498 0.545</pos>
+                <size>0.285 0.505</size>
+                <origin>0.5 0.5</origin>
+                <imageType>screenshot</imageType>
+                 <interpolation>linear</interpolation>
+                <delay>0</delay>
+                <zIndex>15</zIndex>
+            </video>
+
+             <image name="video-border">
+                <pos>0.5 0.55</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>1 1</maxSize>
+                <path>${rootpath}/_inc/systems/_refried/videoborders/system_videoborder.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>20</zIndex>
+             </image> 
+
+           <image name="system-logo">
+                <pos>0.5 0.14</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.55 0.2</maxSize>
+                <path>${rootpath}/_inc/systems/_refried/logos/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_refried/logos/${system.theme}.svg</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>25</zIndex>
+             </image> 
+
+             <image name="characters">
+                <pos>0 0.5</pos>
+                <origin>0 0.5</origin>
+                <maxSize>1 1</maxSize>
+                <path>${rootpath}/_inc/systems/characters/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/characters/custom-collections.webp</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>30</zIndex>
+            </image>
+
+             <image name="consoles">
+                <pos>0.58 0.96</pos>
+                <origin>0 1</origin>
+                <maxSize>0.2 0.25</maxSize>
+                <path>${rootpath}/_inc/systems/consoles/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/consoles/custom-collections.webp</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>35</zIndex>
+            </image>
+
+            <carousel name="system-carousel">
+                <pos>1.01 0.5</pos>
+                <size>0.33 1</size>
+                <origin>1 0.5</origin>
+                <type>vertical</type>
+                <staticImage>${logoSource}</staticImage>
+                <defaultImage>${fallbackLogo}</defaultImage>
+                <maxItemCount>6</maxItemCount>
+                <itemSize>0.175 0.150</itemSize>
+                <itemScale>1.5</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>
+                <unfocusedItemOpacity>0.7</unfocusedItemOpacity>
+                <unfocusedItemDimming>.7</unfocusedItemDimming>
+                <zIndex>40</zIndex>
+              </carousel>
+           
+             <image name="pointer">
+                <pos>0.975 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.2 0.2</maxSize>
+                <path>${rootpath}/_inc/systems/pointers/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/pointers/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>45</zIndex>
+              </image>
+
+            <image name="overlay">
+               <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/images/overlay.png</path>
+                <interpolation>linear</interpolation>
+                <zIndex>50</zIndex>
+           </image>
+
+            <text name="game-count-shadow">
+                <pos>0.011 0.911</pos>
+                <size>1 0</size>
+                <systemdata>gamecountGames</systemdata>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>000000</color>
+                <zIndex>55</zIndex>
+             </text>
+
+            <text name="game-count">
+                <pos>0.01 0.91</pos>
+                <size>1 0</size>
+                <systemdata>gamecountGames</systemdata>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>FFCC00</color>
+                <zIndex>60</zIndex>
+            </text>
+
+          <text name="system-description-shadow">
+            <origin>0 0.5</origin>
+            <pos>0.011 0.981</pos>
+            <size>0.98 0.05</size>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>000000</color>
+            <zIndex>65</zIndex>
+          </text>
+
+        <text name="system-description">
+            <origin>0 0.5</origin>
+            <pos>0.01 0.98</pos>
+            <size>0.98 0.05</size>
+            <text>${systemDescription}</text>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>C0C0C0</color>
+            <zIndex>70</zIndex>
+           </text>
+
+     </view>
+
+        <view name="gamelist">
+           
+             <image name="background">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/systems/_refried/backgrounds/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_refried/backgrounds/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>5</zIndex>
+             </image>
+
+            <image name="video-background">
+                <pos>0 0.5</pos>
+                <origin>0 0.5</origin>
+                <maxSize>1 1</maxSize>
+                <path>${rootpath}/_inc/systems/_refried/video_bg/game_videobg.webp</path>
+                <interpolation>linear</interpolation>
+                <zIndex>10</zIndex>
+            </image> 
+
+            <video name="game-video">
+                <pos>0.233 0.535</pos>
+                <size>0.285 0.505</size>
+                <origin>0.5 0.5</origin>
+                <imageType>screenshot</imageType>
+                <interpolation>linear</interpolation>
+                <delay>0</delay>
+                <zIndex>15</zIndex>
+            </video>     
+
+            <image name="video-border">
+                <pos>0 0.5</pos>
+                <origin>0 0.5</origin>
+                <maxSize>1 1</maxSize>
+                <path>${rootpath}/_inc/systems/_refried/videoborders/game_videoborder.webp</path>
+                <default>${rootpath}/_inc/systems/_refried/videoborders/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>20</zIndex>
+             </image> 
+
+            <image name="controllers">
+                <pos>0.17 0.75</pos>
+                <origin>1 0</origin>
+                <maxSize>0.09 0.19</maxSize>
+                <path>${rootpath}/_inc/systems/_refried/controllers/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_refried/controllers/custom-collections.webp</default>
+                <interpolation>linear</interpolation>
+                <zIndex>25</zIndex>
+            </image>
+
+            <image name="gamelist-logo">
+                <pos>0.23 0.14</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.36 0.16</maxSize>
+                <path>${rootpath}/_inc/systems/_refried/logos/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/_refried/logos/${system.theme}.svg</default>
+                <interpolation>linear</interpolation>
+                <zIndex>30</zIndex>
+            </image>
+
+             <image name="game-box">
+                <pos>0.55 0.79</pos>
+                <maxSize>0.22 0.42</maxSize>
+                <origin>0.5 1</origin>
+                <imageType>3dbox,cover</imageType>
+                <scrollFadeIn>true</scrollFadeIn>
+                 <interpolation>linear</interpolation>
+                <zIndex>30</zIndex>
+            </image>  
+
+            <image name="game-media">
+                <pos>0.64 0.81</pos>
+                <maxSize>0.12 0.22</maxSize>
+                <origin>0.5 1</origin>
+                <imageType>physicalmedia</imageType>
+                <scrollFadeIn>true</scrollFadeIn>
+                <interpolation>linear</interpolation>
+                <zIndex>35</zIndex>
+            </image>  
+
+              <carousel name="game-carousel">
+                <pos>1.01 0.5</pos>
+                <size>0.33 1</size>
+                <origin>1 .5</origin>
+                <type>vertical</type>
+                <imageType>marquee</imageType>
+                <maxItemCount>6</maxItemCount>
+                <itemSize>0.150 0.125</itemSize>
+                <itemScale>1.5</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>
+                <unfocusedItemOpacity>0.7</unfocusedItemOpacity>
+                <unfocusedItemDimming>.7</unfocusedItemDimming>
+                <zIndex>45</zIndex>
+              </carousel>
+
+            <image name="pointer">
+                <pos>0.975 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <maxSize>0.2 0.2</maxSize>
+                <path>${rootpath}/_inc/systems/pointers/${system.theme}.webp</path>
+                <default>${rootpath}/_inc/systems/pointers/_default.webp</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>50</zIndex>
+            </image> 
+
+            <image name="overlay">
+                <pos>0.5 0.5</pos>
+                <origin>0.5 0.5</origin>
+                <size>1 1</size>
+                <path>${rootpath}/_inc/images/overlay.png</path>
+                <interpolation>linear</interpolation>
+                <zIndex>55</zIndex>
+            </image>
+
+            <text name="game-name-shadow">
+                <metadata>name</metadata>
+                <pos>0.011 0.901</pos>
+                <size>1 0</size>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>000000</color>
+                <zIndex>60</zIndex>
+            </text>
+
+             <text name="game-name">
+                <metadata>name</metadata>
+                <pos>0.01 0.9</pos>
+                <size>1 0</size>
+                <fontSize>0.05</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>FFCC00</color>
+                <zIndex>65</zIndex>
+            </text>
+
+            <gamelistinfo name="gamelist-info-shadow">
+                <pos>0.861 0.921</pos>
+                <size>w 0.02</size>
+                <fontSize>0.028</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>right</horizontalAlignment>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>000000</color>
+                <zIndex>70</zIndex>
+            </gamelistinfo>
+
+            <gamelistinfo name="gamelist-info">
+                <pos>0.86 0.92</pos>
+                <size>w 0.02</size>
+                <fontSize>0.028</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <horizontalAlignment>right</horizontalAlignment>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>C0C0C0</color>
+                <zIndex>75</zIndex>
+            </gamelistinfo>
+
+           <text name="game-description-shadow">
+            <origin>0 0.5</origin>
+            <pos>0.011 0.981</pos>
+            <size>0.98 0.05</size>
+            <metadata>description</metadata>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>000000</color>
+            <zIndex>80</zIndex>
+            </text>
+          
+            <text name="game-description">
+            <origin>0 0.5</origin>
+            <pos>0.01 0.98</pos>
+            <size>0.98 0.05</size>
+            <metadata>description</metadata>
+            <container>true</container>
+            <containerType>horizontal</containerType>
+			<horizontalAlignment>left</horizontalAlignment>
+            <containerScrollSpeed>1</containerScrollSpeed>
+            <containerStartDelay>3</containerStartDelay>
+            <fontSize>0.026</fontSize>
+            <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+            <color>C0C0C0</color>
+            <zIndex>85</zIndex>
+            </text>
+
+            <badges name="badges">
+               <pos>0.608 0.89</pos>
+                <size>0.3 0</size>
+                <horizontalAlignment>right</horizontalAlignment>
+                <direction>row</direction>
+                <lines>1</lines>
+                <itemsPerLine>9</itemsPerLine>
+                <itemMargin>-1 .01</itemMargin>
+                <slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
+                <customBadgeIcon badge="collection">${rootpath}/_inc/images/badge-collection.svg</customBadgeIcon>
+                <customBadgeIcon badge="folder">${rootpath}/_inc/images/badge-folder.svg</customBadgeIcon>
+                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/badge-favorite.svg</customBadgeIcon>
+                <customBadgeIcon badge="completed">${rootpath}/_inc/images/badge-completed.svg</customBadgeIcon>
+                <customBadgeIcon badge="kidgame">${rootpath}/_inc/images/badge-kidgame.svg</customBadgeIcon>
+                <customBadgeIcon badge="broken">${rootpath}/_inc/images/badge-broken.svg</customBadgeIcon>
+                <customBadgeIcon badge="controller">${rootpath}/_inc/images/badge-controller.svg</customBadgeIcon>
+                <customBadgeIcon badge="altemulator">${rootpath}/_inc/images/badge-altemulator.svg</customBadgeIcon>
+                <customBadgeIcon badge="manual">${rootpath}/_inc/images/badge-manual.svg</customBadgeIcon>
+                <badgeIconColor>COC0C0</badgeIconColor> 
+                <controllerSize>1</controllerSize>
+                <interpolation>linear</interpolation>
+                <zIndex>90</zIndex>
+            </badges>
+
+             </view>
+
+            <view name="system, gamelist">
+
+             <helpsystem name="help">
+                <pos>0.5 0.017</pos>
+                <origin>0.5 0.5</origin>
+                <textColor>ABABAB</textColor>
+                <iconColor>ABABAB</iconColor>
+                <fontSize>0.026</fontSize>
+                <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
+                <iconTextSpacing>0.003</iconTextSpacing>
+                <originDimmed>0.5 0</originDimmed>
+                <posDimmed>0.5 0.96</posDimmed>
+            </helpsystem>
+
+        </view>
+
+    </aspectRatio>
+
+</theme>
+

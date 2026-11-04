@@ -1,0 +1,27 @@
+<theme>
+
+   <colorScheme name="silver-carousel">
+        <variables>
+            <logoSource>${rootpath}/_inc/systems/wheels/silver/${system.theme}.webp</logoSource>
+        </variables>
+   </colorScheme>
+
+   <colorScheme name="carbon-carousel">
+        <variables>
+            <logoSource>${rootpath}/_inc/systems/wheels/carbon/${system.theme}.webp</logoSource>
+        </variables>
+   </colorScheme>
+
+   <colorScheme name="rect-carousel">
+        <variables>
+            <logoSource>${rootpath}/_inc/systems/wheels/rect/${system.theme}.webp</logoSource>
+        </variables>
+   </colorScheme>
+
+   <colorScheme name="clear-carousel">
+        <variables>
+            <logoSource>${rootpath}/_inc/systems/wheels/clear/${system.theme}.webp</logoSource>
+        </variables>
+   </colorScheme>
+
+</theme>
