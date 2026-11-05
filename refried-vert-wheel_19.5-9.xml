@@ -47,7 +47,6 @@
                 <origin>0.5 0.5</origin>
                 <maxSize>0.55 0.2</maxSize>
                 <path>${rootpath}/_inc/systems/_refried/logos/${system.theme}.webp</path>
-                <default>${rootpath}/_inc/systems/_refried/logos/${system.theme}.svg</default>
                 <interpolation>linear</interpolation>
                 <scrollFadeIn>true</scrollFadeIn>
                 <zIndex>25</zIndex>
@@ -236,7 +235,6 @@
                 <origin>0.5 0.5</origin>
                 <maxSize>0.36 0.16</maxSize>
                 <path>${rootpath}/_inc/systems/_refried/logos/${system.theme}.webp</path>
-                <default>${rootpath}/_inc/systems/_refried/logos/${system.theme}.svg</default>
                 <interpolation>linear</interpolation>
                 <zIndex>30</zIndex>
             </image>
