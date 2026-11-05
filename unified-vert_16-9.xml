@@ -220,7 +220,7 @@
                 <pos>0.28 0.15</pos>
                <origin>0.5 0.5</origin>
                 <maxSize>0.45 0.2</maxSize>
-                <path>${rootpath}/_inc/systems/_unified/logos/${system.theme}.webp</path>>
+                <path>${rootpath}/_inc/systems/_unified/logos/${system.theme}.webp</path>
                 <interpolation>linear</interpolation>
                 <zIndex>25</zIndex>
              </image>
