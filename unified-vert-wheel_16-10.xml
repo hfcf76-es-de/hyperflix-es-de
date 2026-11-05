@@ -193,8 +193,7 @@
                 <pos>0.5 0.55</pos>
                 <origin>0.5 0.5</origin>
                 <maxSize>1 1</maxSize>
-                <path>${rootpath}/_inc/systems/_unified/video_bg/${system.theme}.webp</path>
-                <default>${rootpath}/_inc/systems/_unified/video_bg/game_videobg.webp</default>
+                <path>${rootpath}/_inc/systems/_unified/video_bg/game_videobg.webp</path>
                 <interpolation>linear</interpolation>
                 <zIndex>10</zIndex>
              </image> 
