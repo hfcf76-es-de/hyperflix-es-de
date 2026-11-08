@@ -51,6 +51,27 @@ System logos presented in a rectangular format with a black border
 [Clear] Carousel Logos:
 Original system logos surrounded by a white border
 
+- `Theme Collections`:
+The theme includes the most common game collections:
+
+Action-Adventure
+Fighting
+Horror
+Lightgun
+Platform
+Puzzle
+Racing
+Role Playing Games
+Run n' Gun
+Shoot em' ups
+Shooter
+Sports
+Strategy
+Trackball
+NES Hacks
+SNES Hacks
+Genesis Hacks
+Megadrive Hachs
 
 # License
 You are free to share and adapt this theme as long as you provide attribution back to all orinal authors, as well share any updates you make under the same licence terms.
