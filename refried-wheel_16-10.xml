@@ -153,7 +153,7 @@
 			<horizontalAlignment>left</horizontalAlignment>
             <containerScrollSpeed>1</containerScrollSpeed>
             <containerStartDelay>3</containerStartDelay>
-            <fontSize>0.026</fontSize>
+            <fontSize>0.032</fontSize>
             <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
             <color>000000</color>
             <zIndex>65</zIndex>
@@ -169,7 +169,7 @@
 			<horizontalAlignment>left</horizontalAlignment>
             <containerScrollSpeed>1</containerScrollSpeed>
             <containerStartDelay>3</containerStartDelay>
-            <fontSize>0.026</fontSize>
+            <fontSize>0.032</fontSize>
             <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
             <color>C0C0C0</color>
             <zIndex>70</zIndex>
@@ -326,7 +326,7 @@
             <gamelistinfo name="gamelist-info-shadow">
                 <pos>0.861 0.921</pos>
                 <size>w 0.02</size>
-                <fontSize>0.028</fontSize>
+                <fontSize>0.032</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
                 <horizontalAlignment>right</horizontalAlignment>
                 <verticalAlignment>bottom</verticalAlignment>
@@ -337,7 +337,7 @@
             <gamelistinfo name="gamelist-info">
                 <pos>0.86 0.92</pos>
                 <size>w 0.02</size>
-                <fontSize>0.028</fontSize>
+                <fontSize>0.032</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
                 <horizontalAlignment>right</horizontalAlignment>
                 <verticalAlignment>bottom</verticalAlignment>
@@ -355,7 +355,7 @@
 			<horizontalAlignment>left</horizontalAlignment>
             <containerScrollSpeed>1</containerScrollSpeed>
             <containerStartDelay>3</containerStartDelay>
-            <fontSize>0.026</fontSize>
+            <fontSize>0.032</fontSize>
             <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
             <color>000000</color>
             <zIndex>80</zIndex>
@@ -371,7 +371,7 @@
 			<horizontalAlignment>left</horizontalAlignment>
             <containerScrollSpeed>1</containerScrollSpeed>
             <containerStartDelay>3</containerStartDelay>
-            <fontSize>0.026</fontSize>
+            <fontSize>0.032</fontSize>
             <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
             <color>C0C0C0</color>
             <zIndex>85</zIndex>
@@ -410,7 +410,7 @@
                 <origin>0.5 0.5</origin>
                 <textColor>ABABAB</textColor>
                 <iconColor>ABABAB</iconColor>
-                <fontSize>0.026</fontSize>
+                <fontSize>0.032</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/BebasNeue-Bold.otf</fontPath>
                 <iconTextSpacing>0.003</iconTextSpacing>
                 <originDimmed>0.5 0</originDimmed>
