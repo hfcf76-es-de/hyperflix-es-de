@@ -1,15 +1,13 @@
 # Hyperflix (https://github.com/hfcf76-es-de), a theme for [ES-DE](https://es-de.org/)
 
 
-
 Hyperflix attempts to simulate the look of the [HyperSpin](https://hyperspin-fe.com/) frontend for ES-DE by combining two themes originally created for the [LaunchBox](https://www.launchbox-app.com/) frontend. 
 
 The original themes can be found here:
 
-Unified: (https://forums.launchbox-app.com/files/file/1080-unified/) by CriticalCid
+Unified by CriticalCid: (https://forums.launchbox-app.com/files/file/1080-unified/)
 
-Refried:(https://forums.launchbox-app.com/files/file/1506-unified-refried-20/) by RetroHumanoid
-
+Refried by RetroHumanoid :(https://forums.launchbox-app.com/files/file/1506-unified-refried-20/)
 
 
 ## Configuration Options
